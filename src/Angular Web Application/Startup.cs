@@ -108,8 +108,7 @@ namespace Angular_WebApplication
             //Tech Solutions 
             container.Register<IDBSettings, DBSettings>(Lifestyle.Scoped);
             container.Register<IEmployeeActivityDBContext, EmployeeActivityDBContext>(Lifestyle.Scoped);
-            container.Register<IEmployeeActivityRepository, EmployeeActivityRepository>(Lifestyle.Scoped);
-            container.Register<IEmployeeActivityByDapperRepository, EmployeeActivityByDapperRepository>(Lifestyle.Scoped);
+            container.Register<IEmployeeActivityRepository, EmployeeActivityRepository>(Lifestyle.Scoped);            
             container.Register<ICacheSettings, CacheSettings>(Lifestyle.Scoped);
         }
     }

@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using TechSolutionsLibs.Models.Interface;
 
 namespace TechSolutionsLibs.Models
 {

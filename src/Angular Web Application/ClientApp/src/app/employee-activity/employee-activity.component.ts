@@ -6,7 +6,7 @@ import {
 
 import { EmployeeActivityService } from '../services/employee-activity-service';
 
-import { Router, ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -14,21 +14,19 @@ import { Router, ActivatedRoute } from '@angular/router';
   templateUrl: './employee-activity.component.html',
   styleUrls: ['./employee-activity.component.css']
 })
-export class EmployeeActivityComponent implements OnInit {
+export class EmployeeActivityComponent  {
+    //init props
     public employeeActivitylist: EmployeeActivityList[];
-    constructor(public http: Http, private _router: Router, private _employeeService: EmployeeActivityService) {
+    
+
+    constructor(private _employeeService: EmployeeActivityService) {
         this.getEmployeeActivities();
     }
 
     getEmployeeActivities() {
-        this._employeeService.getEmployeeActivities().subscribe(data => this.employeeActivitylist = data)
-        console.log(this.employeeActivitylist);
+        this._employeeService.getEmployeeActivities().subscribe(data => this.employeeActivitylist = data)        
     }  
-
-    ngOnInit() {
-
-  }
-
+  
 }
 
 interface EmployeeActivityList {

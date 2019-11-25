@@ -1,4 +1,4 @@
-﻿namespace TechSolutionsLibs.Models
+﻿namespace TechSolutionsLibs.Models.Interface
 {
     public interface IEmployeeActivity 
     {

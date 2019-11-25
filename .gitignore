@@ -3,3 +3,4 @@ src/.vs/*
 src/.vs/*.*
 
 src/.vs/tech_solutions/DesignTimeBuild/.dtbcache
+src/Angular Web Application/ClientApp/package-lock.json
