@@ -12,12 +12,8 @@
 
 
 
-
-
-
-
 <div>
-  <h4>Angular, .NET Core, ORM</h4>
+  <h4>Angular, .NET Core, ORM and Azure (continous integration)</h4>
   <p>There are 3 applications in the Visual Studio 2019 solution.</p>
   <ul>
     <li>.NET Core Angular Web Application</li>
@@ -31,13 +27,22 @@
   <p>The angular client app runs within the .NET Core Angular Web application. The .NET Core Web Application has REST API that angular client app use to send and retrieve data.</p>
 </div>
 <div>
-  <h4> # .NET Core Library</h4>
-  <p>The codes in the library can be reused and shared with one or more websites.</p>
+  <h4>.NET Core Library</h4>
+  <p>The codes in the library can be reused and shared with one or more websites.
+  The library uses Entity Framework to manage insert and delete data in MS SQL Server.
+  It is also responsible for receiving and displaying data back to Angular.
+  </p>
 </div>
 
 
 <div>
   <h4>xUnit Test</h4>
   <p>Is the Unit test cases for the Library</p>
+</div>
+
+
+<div>
+  <h4>Continous integration</h4>
+  <p>The application is using Azure pipelines to fetch code from GITHUB, build, create and publish a zip file to then deploy to https://api-angular-single-page-application.azurewebsites.net/  </p>
 </div>
 
