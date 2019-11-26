@@ -1,18 +1,10 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import {
-    Http,
-    Headers
-} from '@angular/http';
-
 import { EmployeeActivityService } from '../services/employee-activity-service';
-
-import { Router } from '@angular/router';
 
 
 @Component({
   selector: 'app-employee-activity',
-  templateUrl: './employee-activity.component.html',
-  styleUrls: ['./employee-activity.component.css']
+  templateUrl: './employee-activity.component.html'  
 })
 export class EmployeeActivityComponent  {
     //init props
